@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import TableData from './tableData';
 import Loader from './loader';
 import Filter from './filter';
+import TotalUsers from './totalUsers';
 
 const Home = () => {
     const { users, loader } = useSelector((state) => state.users);
@@ -32,6 +33,8 @@ const Home = () => {
         !loader ?
             (
                 <>
+                    <h2 className='text-center text-info mb-4'>Redux Project</h2>
+                    <TotalUsers />
                     <Filter />
                     <table class="table table-hover">
                         <thead>
