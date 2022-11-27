@@ -13,7 +13,7 @@ const usersReducer = createSlice({
     },
     reducers: {
         addUser: (state, action) => {
-            console.log(action);
+            // console.log(action);
             state.users = [...state.users, action.payload]
         },
         filteredUser: (state, action) => {
